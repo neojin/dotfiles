@@ -1,0 +1,17 @@
+[user]
+  name = Jin Lee
+  email = jinslee@gmail.com
+
+[alias]
+  co = checkout
+  ci = commit
+  rb = rebase
+  br = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+[color]
+  ui = true
+  ui = auto
+  ui = true
+[core]
+  editor = /usr/bin/vim
+[push]
+  default = simple
