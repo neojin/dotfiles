@@ -47,6 +47,11 @@ set listchars=""
 set listchars=tab:→\
 set listchars+=trail:◦
 
+" search
+set hlsearch " highlight search results
+set ignorecase
+set smartcase
+
 " NERDTree
 autocmd vimenter * NERDTree
 
