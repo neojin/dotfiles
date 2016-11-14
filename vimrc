@@ -17,6 +17,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'sjl/gundo.vim'
 
 Plugin 'tpope/vim-rails'
 Plugin 'elixir-lang/vim-elixir.git'
@@ -34,8 +35,9 @@ set lazyredraw
 " font
 set guifont=Inconsolata:h14
 
-" show line numbers
-set number
+" line
+set number " show line numbers
+set cursorline " highlight current line
 
 " tabs and indentation
 set autoindent
@@ -53,15 +55,14 @@ set listchars=tab:→\
 set listchars+=trail:◦
 
 " search
+set incsearch " search as characters are entered
 set hlsearch " highlight search results
 set ignorecase
 set smartcase
+set showmatch " highlight matching [{()}]
 
-" key bindings
-let mapleader = "\<Space>"
-
-" NERDTree
-autocmd vimenter * NERDTree
+" menu
+set wildmenu " visual autocomplete for command menu
 
 " jellybeans
 set background=dark
@@ -85,3 +86,10 @@ let g:syntastic_check_on_wq = 0
 
 " Indent Guides
 let g:indent_guides_enable_on_vim_startup = 1
+
+" Key Bindings
+let mapleader = "\<Space>"
+" turn off search highlight
+nnoremap <leader><backspace> :nohlsearch<CR>
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>
