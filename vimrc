@@ -120,7 +120,15 @@ set undodir=~/.vim/undo
 let mapleader = "\<Space>"
 " turn off search highlight
 nnoremap <leader><backspace> :nohlsearch<CR>
+
 " toggle gundo
 nnoremap <leader>u :MundoToggle<CR>
+
 " open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
+
+" PageUp/Down move cursor
+map <silent> <PageUp> 1000<C-U>
+map <silent> <PageDown> 1000<C-D>
+imap <silent> <PageUp> <C-O>1000<C-U>
+imap <silent> <PageDown> <C-O>1000<C-D>
