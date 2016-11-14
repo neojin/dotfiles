@@ -10,6 +10,7 @@ call vundle#begin('~/.vim/bundle')
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-fugitive'
 Plugin 'w0ng/vim-hybrid'
 
 " All of your Plugins must be added before the following line
