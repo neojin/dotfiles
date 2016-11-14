@@ -12,6 +12,7 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0ng/vim-hybrid'
+Plugin 'itchyny/lightline.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,3 +35,8 @@ autocmd vimenter * NERDTree
 " hybrid.vim
 set background=dark
 colorscheme hybrid
+
+" lightline
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
