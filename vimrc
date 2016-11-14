@@ -14,6 +14,9 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'nathanaelkane/vim-indent-guides.git'
 Plugin 'mileszs/ack.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'airblade/vim-gitgutter'
 
 Plugin 'tpope/vim-rails'
 Plugin 'elixir-lang/vim-elixir.git'
@@ -53,6 +56,9 @@ set listchars+=trail:◦
 set hlsearch " highlight search results
 set ignorecase
 set smartcase
+
+" key bindings
+let mapleader = "\<Space>"
 
 " NERDTree
 autocmd vimenter * NERDTree
