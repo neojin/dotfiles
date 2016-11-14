@@ -21,6 +21,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'simnalamburt/vim-mundo'
 
 Plugin 'tpope/vim-rails'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'elixir-lang/vim-elixir.git'
 
 " All of your Plugins must be added before the following line
@@ -70,6 +71,9 @@ set backupdir=~/.vim/backup
 set backupskip=/tmp/*
 set directory=~/.vim/tmp
 set writebackup
+
+" clipboard
+set clipboard=unnamed " make yy, D, P work with system clipboard
 
 " jellybeans
 set background=dark
