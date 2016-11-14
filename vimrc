@@ -14,6 +14,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'nathanaelkane/vim-indent-guides.git'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
