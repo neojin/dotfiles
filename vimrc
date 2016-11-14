@@ -26,6 +26,7 @@ filetype plugin indent on    " required
 set term=screen-256color
 setglobal fileencoding=utf-8
 set encoding=utf-8
+set lazyredraw
 
 " font
 set guifont=Inconsolata:h14
