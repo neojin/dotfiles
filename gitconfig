@@ -14,5 +14,6 @@
   ui = true
 [core]
   editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
 [push]
   default = current
