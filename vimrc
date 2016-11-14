@@ -64,6 +64,13 @@ set showmatch " highlight matching [{()}]
 " menu
 set wildmenu " visual autocomplete for command menu
 
+" backups
+set backup
+set backupdir=~/.vim/backup
+set backupskip=/tmp/*
+set directory=~/.vim/tmp
+set writebackup
+
 " jellybeans
 set background=dark
 colorscheme jellybeans
