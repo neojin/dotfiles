@@ -10,7 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
-Plugin 'w0ng/vim-hybrid'
+Plugin 'nanotech/jellybeans.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'nathanaelkane/vim-indent-guides.git'
@@ -21,29 +21,41 @@ filetype plugin indent on    " required
 
 " terminal
 set term=screen-256color
+setglobal fileencoding=utf-8
+set encoding=utf-8
 
 " font
-set guifont=Inconsolata:h14 
+set guifont=Inconsolata:h14
 
 " show line numbers
 set number
 
 " tabs and indentation
 set autoindent
+set smartindent
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
+set expandtab
+
+" list settings
+set list
+set listchars=""
+set listchars=tab:→\
+set listchars+=trail:◦
 
 " NERDTree
 autocmd vimenter * NERDTree
 
-" hybrid.vim
+" jellybeans
 set background=dark
-colorscheme hybrid
+colorscheme jellybeans
 
 " lightline
+set noshowmode " dont show default -- INSERT -- line
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
-	\ }
+  \ 'colorscheme': 'jellybeans',
+  \ }
 
 " Syntastic
 set statusline+=%#warningmsg#
