@@ -21,7 +21,9 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'simnalamburt/vim-mundo'
 
 Plugin 'tpope/vim-rails'
+Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir.git'
 
 " All of your Plugins must be added before the following line
