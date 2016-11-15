@@ -76,6 +76,7 @@ set writebackup
 
 " clipboard
 set clipboard=unnamed " make yy, D, P work with system clipboard
+set go+=a " Visual selection automatically copied to the clipboard
 
 " jellybeans
 set background=dark
