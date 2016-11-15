@@ -19,6 +19,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'simnalamburt/vim-mundo'
+Plugin 'mhinz/vim-startify'
 
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
@@ -34,6 +35,7 @@ filetype plugin indent on    " required
 setglobal fileencoding=utf-8
 set encoding=utf-8
 set lazyredraw
+syntax on
 
 " font
 set guifont=Inconsolata:h14
