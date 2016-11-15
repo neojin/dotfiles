@@ -101,6 +101,11 @@ let g:lightline = {
   \ }
   \ }
 
+" CtrlP
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -135,3 +140,7 @@ map <silent> <PageUp> 1000<C-U>
 map <silent> <PageDown> 1000<C-D>
 imap <silent> <PageUp> <C-O>1000<C-U>
 imap <silent> <PageDown> <C-O>1000<C-D>
+
+" keep v-line after indenting
+xnoremap < <gv
+xnoremap > >gv
