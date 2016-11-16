@@ -162,11 +162,6 @@ nnoremap j h
 nnoremap k gj
 nnoremap i gk
 
-" bind page up to shift-I and page down to shift-K
-nnoremap I <C-U>
-nnoremap K <C-D>
-
-" bind Shift-i (insert start of nonwhitespace) to C-I and
-" bind Shift-k (help) to C-K
-nnoremap <C-I> I
-nnoremap <C-K> K
+" bind page up to C-I and page down to C-K
+nnoremap <C-I> <C-U>
+nnoremap <C-K> <C-D>
