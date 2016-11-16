@@ -162,7 +162,7 @@ nnoremap j h
 nnoremap k gj
 nnoremap i gk
 
-" bind page up to C-I and page down to C-K
+" bind page up to shift-I and page down to shift-K
 nnoremap I <C-U>
 nnoremap K <C-D>
 
