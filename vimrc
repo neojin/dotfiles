@@ -147,15 +147,26 @@ imap <silent> <PageDown> <C-O>1000<C-D>
 xnoremap < <gv
 xnoremap > >gv
 
-" WARNING - NONSTANDARD KEY MAPPING BELOW
+" WARNING - NONSTANDARD KEY MAPPINGS BELOW
 " PROCEED AT YOUR OWN RISK
 
-" insert is shift-i. I know that sounds crazy
+" insert is h. I know that sounds crazy
 " but I cannot use hjkl for movement
 " I use ijkl, a right hand version of wasd (think FPS games)
 " i == up, j == left, k == down, l == right
-nnoremap h I
-nnoremap I i
+nnoremap h i
 nnoremap j h
+
+" these are so that up and down do not pass over code/text
+" that span multiple lines
 nnoremap k gj
 nnoremap i gk
+
+" bind page up to C-I and page down to C-K
+nnoremap I <C-U>
+nnoremap K <C-D>
+
+" bind Shift-i (insert start of nonwhitespace) to C-I and
+" bind Shift-k (help) to C-K
+nnoremap <C-I> I
+nnoremap <C-K> K
