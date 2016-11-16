@@ -157,21 +157,22 @@ xnoremap > >gv
 " WARNING - NONSTANDARD KEY MAPPINGS BELOW
 " PROCEED AT YOUR OWN RISK
 
-" insert is h. I know that sounds crazy
-" but I cannot use hjkl for movement
+" insert is q and shift-i is shift-Q. I know that sounds crazy
+" but I cannot use hjkl for movement, and I never use q/Q
 " I use ijkl, a right hand version of wasd (think FPS games)
 " i == up, j == left, k == down, l == right
-nnoremap h i
-nnoremap j h
+map q i
+map Q I
+map j h
 
 " these are so that up and down do not pass over code/text
 " that span multiple lines
-nnoremap k gj
-nnoremap i gk
+map k gj
+map i gk
 
-" bind page up to C-I and page down to C-K
-nnoremap <C-I> <C-U>
-nnoremap <C-K> <C-D>
+" bind page up to Shift I and page down to Shift K
+map I <C-U>
+map K <C-D>
 
 " split traversal using Leader + ijkl
 nnoremap <Leader>i <C-W><C-K>
