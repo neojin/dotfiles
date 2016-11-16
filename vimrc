@@ -146,3 +146,16 @@ imap <silent> <PageDown> <C-O>1000<C-D>
 " keep v-line after indenting
 xnoremap < <gv
 xnoremap > >gv
+
+" WARNING - NONSTANDARD KEY MAPPING BELOW
+" PROCEED AT YOUR OWN RISK
+
+" insert is shift-i. I know that sounds crazy
+" but I cannot use hjkl for movement
+" I use ijkl, a right hand version of wasd (think FPS games)
+" i == up, j == left, k == down, l == right
+nnoremap h I
+nnoremap I i
+nnoremap j h
+nnoremap k gj
+nnoremap i gk
