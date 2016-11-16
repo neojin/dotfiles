@@ -38,6 +38,10 @@ set encoding=utf-8
 set lazyredraw
 syntax on
 
+" splits
+set splitbelow
+set splitright
+
 " font
 set guifont=Inconsolata:h14
 
@@ -137,6 +141,9 @@ nnoremap <leader>u :MundoToggle<CR>
 " open CtrlP
 nnoremap <Leader>o :CtrlP<CR>
 
+" unmap IndentGuidesToggle
+let g:indent_guides_default_mapping = 0
+
 " PageUp/Down move cursor
 map <silent> <PageUp> 1000<C-U>
 map <silent> <PageDown> 1000<C-D>
@@ -165,3 +172,9 @@ nnoremap i gk
 " bind page up to C-I and page down to C-K
 nnoremap <C-I> <C-U>
 nnoremap <C-K> <C-D>
+
+" split traversal using Leader + ijkl
+nnoremap <Leader>i <C-W><C-K>
+nnoremap <Leader>j <C-W><C-H>
+nnoremap <Leader>k <C-W><C-J>
+nnoremap <Leader>l <C-W><C-L>
