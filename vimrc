@@ -26,6 +26,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir.git'
+Plugin 'slim-template/vim-slim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -78,7 +79,6 @@ set writebackup
 
 " clipboard
 set clipboard=unnamed " make yy, D, P work with system clipboard
-set go+=a " Visual selection automatically copied to the clipboard
 
 " jellybeans
 set background=dark
