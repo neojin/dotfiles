@@ -31,6 +31,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " terminal
+set termguicolors
 setglobal fileencoding=utf-8
 set encoding=utf-8
 set lazyredraw
@@ -123,12 +124,10 @@ let g:syntastic_check_on_wq = 0
 " Indent Guides
 let g:indent_guides_enable_on_vim_startup = 1
 
-" Mundo
-" Enable persistent undo so that undo history persists across vim sessions
-set undofile
-set undodir=~/.vim/undo
-
 " Key Bindings
+" map visual mode to backtick
+imap ` <Esc>
+
 let mapleader = "\<Space>"
 " turn off search highlight
 nnoremap <leader><backspace> :nohlsearch<CR>
@@ -156,7 +155,7 @@ xnoremap > >gv
 " but I cannot use hjkl for movement, and I never use q/Q
 " I use ijkl, a right hand version of wasd (think FPS games)
 " i == up, j == left, k == down, l == right
-map q i
+nnoremap q i
 map Q I
 map j h
 

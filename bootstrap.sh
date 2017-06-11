@@ -20,5 +20,6 @@ for file in $files; do
 done
 
 # symlink neovim
+rm ~/.config/nvim/init.vim
 mkdir -p ~/.config/nvim
 ln -s $dir/vimrc ~/.config/nvim/init.vim
