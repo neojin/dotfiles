@@ -18,8 +18,6 @@ Plugin 'mileszs/ack.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'simnalamburt/vim-mundo'
-Plugin 'mhinz/vim-startify'
 
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
@@ -134,9 +132,6 @@ set undodir=~/.vim/undo
 let mapleader = "\<Space>"
 " turn off search highlight
 nnoremap <leader><backspace> :nohlsearch<CR>
-
-" toggle gundo
-nnoremap <leader>u :MundoToggle<CR>
 
 " open CtrlP
 nnoremap <Leader>o :CtrlP<CR>

@@ -18,3 +18,7 @@ for file in $files; do
   rm ~/.$file
   ln -s $dir/$file ~/.$file
 done
+
+# symlink neovim
+mkdir -p ~/.config/nvim
+ln -s $dir/vimrc ~/.config/nvim/init.vim
