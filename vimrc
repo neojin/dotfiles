@@ -168,8 +168,8 @@ map i gk
 map I <C-U>
 map K <C-D>
 
-" split traversal using Leader + ijkl
-nnoremap <Leader>i <C-W><C-K>
-nnoremap <Leader>j <C-W><C-H>
-nnoremap <Leader>k <C-W><C-J>
-nnoremap <Leader>l <C-W><C-L>
+" split traversal using ijkl
+nnoremap <C-W>i <C-W><C-k>
+nnoremap <C-W>j <C-W><C-H>
+nnoremap <C-W>k <C-W><C-J>
+nnoremap <C-W>l <C-W><C-L>
