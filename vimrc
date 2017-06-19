@@ -80,7 +80,7 @@ set directory=~/.vim/tmp
 set writebackup
 
 " clipboard
-set clipboard=unnamed " make yy, D, P work with system clipboard
+set clipboard+=unnamedplus
 
 " jellybeans
 set background=dark
@@ -151,10 +151,6 @@ xnoremap > >gv
 " that span multiple lines
 map j gj
 map k gk
-
-" bind page up to Shift I and page down to Shift K
-map K <C-U>
-map J <C-D>
 
 " split traversal using ijkl
 nnoremap <C-W>h <C-W><C-H>
