@@ -31,7 +31,6 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 " terminal
-set termguicolors
 setglobal fileencoding=utf-8
 set encoding=utf-8
 set lazyredraw
@@ -148,28 +147,17 @@ imap <silent> <PageDown> <C-O>1000<C-D>
 xnoremap < <gv
 xnoremap > >gv
 
-" WARNING - NONSTANDARD KEY MAPPINGS BELOW
-" PROCEED AT YOUR OWN RISK
-
-" insert is q and shift-i is shift-Q. I know that sounds crazy
-" but I cannot use hjkl for movement, and I never use q/Q
-" I use ijkl, a right hand version of wasd (think FPS games)
-" i == up, j == left, k == down, l == right
-nnoremap q i
-map Q I
-map j h
-
 " these are so that up and down do not pass over code/text
 " that span multiple lines
-map k gj
-map i gk
+map j gj
+map k gk
 
 " bind page up to Shift I and page down to Shift K
-map I <C-U>
+map J <C-U>
 map K <C-D>
 
 " split traversal using ijkl
-nnoremap <C-W>i <C-W><C-k>
-nnoremap <C-W>j <C-W><C-H>
-nnoremap <C-W>k <C-W><C-J>
+nnoremap <C-W>h <C-W><C-H>
+nnoremap <C-W>j <C-W><C-J>
+nnoremap <C-W>k <C-W><C-k>
 nnoremap <C-W>l <C-W><C-L>
