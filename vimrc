@@ -153,8 +153,8 @@ map j gj
 map k gk
 
 " bind page up to Shift I and page down to Shift K
-map J <C-U>
-map K <C-D>
+map K <C-U>
+map J <C-D>
 
 " split traversal using ijkl
 nnoremap <C-W>h <C-W><C-H>
