@@ -30,6 +30,17 @@ Plugin 'slim-template/vim-slim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set nocompatible
+
+set hidden
+set nowrap
+set history=1000
+set undolevels=1000
+set title
+set visualbell
+set noerrorbells
+set pastetoggle=<F2>
+
 " terminal
 setglobal fileencoding=utf-8
 set encoding=utf-8
@@ -49,6 +60,7 @@ set cursorline " highlight current line
 
 " tabs and indentation
 set autoindent
+set copyindent
 set smartindent
 set tabstop=2
 set shiftwidth=2
@@ -73,11 +85,7 @@ set showmatch " highlight matching [{()}]
 set wildmenu " visual autocomplete for command menu
 
 " backups
-set backup
-set backupdir=~/.vim/backup
-set backupskip=/tmp/*
-set directory=~/.vim/tmp
-set writebackup
+set nobackup
 
 " clipboard
 set clipboard+=unnamedplus
@@ -124,8 +132,6 @@ let g:syntastic_check_on_wq = 0
 let g:indent_guides_enable_on_vim_startup = 1
 
 " Key Bindings
-" map visual mode to backtick
-imap ` <Esc>
 
 let mapleader = "\<Space>"
 " turn off search highlight
@@ -153,7 +159,9 @@ map j gj
 map k gk
 
 " split traversal using ijkl
-nnoremap <C-W>h <C-W><C-H>
-nnoremap <C-W>j <C-W><C-J>
-nnoremap <C-W>k <C-W><C-k>
-nnoremap <C-W>l <C-W><C-L>
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+nnoremap ; :
