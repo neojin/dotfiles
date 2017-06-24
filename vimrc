@@ -132,6 +132,10 @@ let g:syntastic_check_on_wq = 0
 " Indent Guides
 let g:indent_guides_enable_on_vim_startup = 1
 
+" Elm
+
+let g:elm_format_autosave = 1
+
 " Key Bindings
 
 let mapleader = "\<Space>"
