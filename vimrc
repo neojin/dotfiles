@@ -26,6 +26,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir.git'
 Plugin 'slim-template/vim-slim'
 Plugin 'ElmCast/elm-vim'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
