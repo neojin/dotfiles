@@ -130,6 +130,12 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:elm_format_autosave = 1
 
 " vim-go
+"" Build/Test on save.
+augroup auto_go
+  autocmd!
+  autocmd BufWritePost *.go :GoBuild
+  autocmd BufWritePost *_test.go :GoTest
+augroup end
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'test']
 
 " Key Bindings
