@@ -27,6 +27,7 @@ Plugin 'slim-template/vim-slim'
 Plugin 'ElmCast/elm-vim'
 Plugin 'fatih/vim-go'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Shougo/deoplete.nvim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -127,6 +128,9 @@ let g:indent_guides_enable_on_vim_startup = 1
 " Elm
 
 let g:elm_format_autosave = 1
+
+" vim-go
+let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'test']
 
 " Key Bindings
 
