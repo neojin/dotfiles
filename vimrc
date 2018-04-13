@@ -42,6 +42,7 @@ set title
 set visualbell
 set noerrorbells
 set pastetoggle=<F2>
+set autoread
 
 " terminal
 setglobal fileencoding=utf-8
