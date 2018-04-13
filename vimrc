@@ -126,7 +126,6 @@ let g:ctrlp_working_path_mode = 0
 let g:indent_guides_enable_on_vim_startup = 1
 
 " Elm
-
 let g:elm_format_autosave = 1
 
 " vim-go
@@ -137,6 +136,10 @@ augroup auto_go
   autocmd BufWritePost *_test.go :GoTest
 augroup end
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'test']
+
+
+" NERDTree
+autocmd BufWritePost * NERDTreeFocus | execute 'normal R' | wincmd p
 
 " Key Bindings
 
