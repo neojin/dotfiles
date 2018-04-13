@@ -25,6 +25,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir.git'
 Plugin 'slim-template/vim-slim'
 Plugin 'ElmCast/elm-vim'
+Plugin 'fatih/vim-go'
 Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
