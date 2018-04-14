@@ -17,7 +17,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
-
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
