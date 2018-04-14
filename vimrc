@@ -137,10 +137,6 @@ augroup auto_go
 augroup end
 let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'test']
 
-
-" NERDTree
-autocmd BufWritePost * NERDTreeFocus | execute 'normal R' | wincmd p
-
 " Key Bindings
 
 let mapleader = "\<Space>"
