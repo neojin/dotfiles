@@ -130,7 +130,6 @@ let g:elm_format_autosave = 1
 
 " vim-go
 "" Build/Test on save.
-let g:go_fmt_command = "goimports"
 augroup auto_go
   autocmd!
   autocmd BufWritePost *.go :GoBuild
