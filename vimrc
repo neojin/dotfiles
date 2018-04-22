@@ -95,7 +95,7 @@ set nobackup
 set clipboard+=unnamedplus
 
 " strip whitespace on certain files
-autocmd FileType rb,html,erb,slim autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd BufWritePre *.(rb|html|erb|slim) %s/\s\+$//e
 
 " jellybeans
 set background=dark
