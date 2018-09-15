@@ -9,11 +9,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'tpope/vim-fugitive'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'nathanaelkane/vim-indent-guides.git'
-Plugin 'mileszs/ack.vim'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
@@ -24,10 +22,8 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'mxw/vim-jsx'
 Plugin 'elixir-lang/vim-elixir.git'
 Plugin 'slim-template/vim-slim'
-Plugin 'ElmCast/elm-vim'
 Plugin 'fatih/vim-go'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'Shougo/deoplete.nvim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -128,21 +124,9 @@ let g:ctrlp_working_path_mode = 0
 " Indent Guides
 let g:indent_guides_enable_on_vim_startup = 1
 
-" Elm
-let g:elm_format_autosave = 1
-
-" vim-go
-"" Build/Test on save.
-augroup auto_go
-  autocmd!
-  autocmd BufWritePost *.go :GoBuild
-  autocmd BufWritePost *_test.go :GoTest
-augroup end
-let g:go_metalinter_autosave_enabled = ['vet', 'golint', 'test']
-
 " Key Bindings
-
 let mapleader = "\<Space>"
+
 " turn off search highlight
 nnoremap <leader><backspace> :nohlsearch<CR>
 
