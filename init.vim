@@ -1,33 +1,9 @@
 set nocompatible            " disable compatibility to old-time vi
-set encoding=utf8
-let g:airline_powerline_fonts = 1
-set showmatch               " show matching 
-set ignorecase              " case insensitive 
-set mouse=v                 " middle-click paste with 
-set hlsearch                " highlight search 
-set incsearch               " incremental search
-set tabstop=4               " number of columns occupied by a tab 
-set softtabstop=4           " see multiple spaces as tabstops so <BS> does the right thing
-set expandtab               " converts tabs to white space
-set shiftwidth=4            " width for autoindents
-set autoindent              " indent a new line the same amount as the line just typed
-set number                  " add line numbers
-set wildmode=longest,list   " get bash-like tab completions
-set cc=80                  " set an 80 column border for good coding style
-filetype plugin indent on   "allow auto-indenting depending on file type
-syntax on                   " syntax highlighting
-set mouse=a                 " enable mouse click
-set clipboard=unnamedplus   " using system clipboard
-filetype plugin on
-set cursorline              " highlight current cursorline
-set ttyfast                 " Speed up scrolling in Vim
-" set spell                 " enable spell check (may need to download language package)
-" set noswapfile            " disable creating swap file
-" set backupdir=~/.cache/vim " Directory to store backup files.
-"
-"
+filetype off
+
 call plug#begin("~/.vim/plugged")
  " Plugin Section
+ Plug 'itchyny/lightline.vim'
  Plug 'dracula/vim'
  Plug 'ryanoasis/vim-devicons'
  Plug 'SirVer/ultisnips'
@@ -37,6 +13,46 @@ call plug#begin("~/.vim/plugged")
  Plug 'mhinz/vim-startify'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
+
+set encoding=utf8
+filetype plugin indent on   "allow auto-indenting depending on file type
+let g:airline_powerline_fonts = 1
+set mouse=v                 " middle-click paste with 
+set number                  " add line numbers
+set wildmode=longest,list   " get bash-like tab completions
+set cc=80                   " set an 80 column border for good coding style
+syntax on                   " syntax highlighting
+set mouse=a                 " enable mouse click
+set clipboard=unnamedplus   " using system clipboard
+set cursorline              " highlight current cursorline
+set ttyfast                 " Speed up scrolling in Vim
+set history=1000
+set undolevels=1000
+set title
+set visualbell
+set noerrorbells
+set autoread
+" set spell                 " enable spell check (may need to download language package)
+" set noswapfile            " disable creating swap file
+" set backupdir=~/.cache/vim " Directory to store backup files.
+
+" tabs and indentation
+set autoindent
+set copyindent
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set backspace=indent,eol,start
+
+" search
+set incsearch " search as characters are entered
+set hlsearch " highlight search results
+set ignorecase
+set smartcase
+set showmatch " highlight matching [{()}]
 
 " color schemes
  if (has("termguicolors"))
@@ -48,6 +64,11 @@ colorscheme dracula
 " open new split panes to right and below
 set splitright
 set splitbelow
+
+" these are so that up and down do not pass over code/text
+" that span multiple lines
+map j gj
+map k gk
 
 " move line or visually selected block - alt+j/k
 inoremap <A-j> <Esc>:m .+1<CR>==gi
