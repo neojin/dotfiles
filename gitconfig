@@ -13,7 +13,8 @@
   ui = auto
   ui = true
 [core]
-  editor = /usr/bin/vim
+  editor = /opt/homebrew/bin/nvim
   excludesfile = ~/.gitignore
+  pager = less -F -X
 [push]
   default = current
