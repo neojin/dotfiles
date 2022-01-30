@@ -13,17 +13,12 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'nathanaelkane/vim-indent-guides.git'
 Plugin 'tomtom/tcomment_vim'
-Plugin 'easymotion/vim-easymotion'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'mxw/vim-jsx'
-Plugin 'elixir-lang/vim-elixir.git'
 Plugin 'slim-template/vim-slim'
-Plugin 'fatih/vim-go'
-Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
