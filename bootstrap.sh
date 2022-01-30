@@ -3,7 +3,7 @@
 ########## Variables
 
 dir=~/dotfiles # dotfiles directory
-files="gitconfig gitignore tmux.conf vim vimrc init.vim" # list of files/folders to symlink in homedir
+files="gitconfig gitignore vim init.vim" # list of files/folders to symlink in homedir
 
 ##########
 
