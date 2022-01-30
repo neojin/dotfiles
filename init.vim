@@ -18,6 +18,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'sheerun/vim-polyglot'
   Plug 'psliwka/vim-smoothie'
+  Plug 'tomtom/tcomment_vim'
+  Plug 'mileszs/ack.vim'
 call plug#end()
 
 
@@ -42,6 +44,9 @@ set autoread
 " set spell                 " enable spell check (may need to download language package)
 " set noswapfile            " disable creating swap file
 " set backupdir=~/.cache/vim " Directory to store backup files.
+
+" Ack
+let g:ack_mappings = { "<C-s>": "<C-W><CR><C-W>K", "<C-v>": "<C-W><CR><C-W>H<C-W>b<C-W>J<C-W>t" }
 
 " tabs and indentation
 set autoindent
