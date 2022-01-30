@@ -3,7 +3,7 @@
 ########## Variables
 
 dir=~/dotfiles # dotfiles directory
-files="gitconfig gitignore tmux.conf vim vimrc" # list of files/folders to symlink in homedir
+files="gitconfig gitignore tmux.conf vim vimrc init.vim" # list of files/folders to symlink in homedir
 
 ##########
 
@@ -22,4 +22,4 @@ done
 # symlink neovim
 rm ~/.config/nvim/init.vim
 mkdir -p ~/.config/nvim
-ln -s $dir/vimrc ~/.config/nvim/init.vim
+ln -s $dir/init.vim ~/.config/nvim/init.vim

@@ -3,3 +3,5 @@ vim/tmp/*.swp
 vim/tmp/*.swo
 vim/undo/*
 vim/bundle/*
+vim/autoload/*
+vim/plugged/*
