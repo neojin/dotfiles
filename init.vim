@@ -5,7 +5,6 @@ call plug#begin("~/.vim/plugged")
   " Plugin Section
   Plug 'f-person/git-blame.nvim'
   Plug 'itchyny/lightline.vim'
-  Plug 'dracula/vim'
   Plug 'ryanoasis/vim-devicons'
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
@@ -14,8 +13,10 @@ call plug#begin("~/.vim/plugged")
   Plug 'mhinz/vim-startify'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'nathanaelkane/vim-indent-guides.git'
-  Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 
 
@@ -62,12 +63,17 @@ set showmatch " highlight matching [{()}]
 set wildmenu " visual autocomplete for command menu
 
 " color schemes
- if (has("termguicolors"))
- set termguicolors
- endif
- syntax enable
- " colorscheme evening
-colorscheme dracula
+if (has("termguicolors"))
+  set termguicolors
+endif
+syntax enable
+
+" theme
+colorscheme tokyonight
+
+" git signs
+lua require('gitsigns').setup()
+
 " open new split panes to right and below
 set splitright
 set splitbelow
@@ -79,13 +85,7 @@ map k gk
 
 " CtrlP
 nnoremap <Leader>o :CtrlP<CR>
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-
-" Indent Guides
-let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_default_mapping = 0
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " move line or visually selected block - alt+j/k
 inoremap <A-j> <Esc>:m .+1<CR>==gi
