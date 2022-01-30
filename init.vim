@@ -9,15 +9,15 @@ call plug#begin("~/.vim/plugged")
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
   Plug 'scrooloose/nerdtree'
-  Plug 'preservim/nerdcommenter'
   Plug 'mhinz/vim-startify'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim', { 'branch': 'release' }
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'lukas-reineke/indent-blankline.nvim'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
   Plug 'sheerun/vim-polyglot'
+  Plug 'psliwka/vim-smoothie'
 call plug#end()
 
 
