@@ -20,6 +20,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'psliwka/vim-smoothie'
   Plug 'tomtom/tcomment_vim'
   Plug 'mileszs/ack.vim'
+  Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 
@@ -80,18 +81,23 @@ colorscheme tokyonight
 " git signs
 lua require('gitsigns').setup()
 
-" open new split panes to right and below
-set splitright
-set splitbelow
 
 " these are so that up and down do not pass over code/text
 " that span multiple lines
 map j gj
 map k gk
 
+" EasyMotion
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+
 " CtrlP
 nnoremap <Leader>o :CtrlP<CR>
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" open new split panes to right and below
+set splitright
+set splitbelow
 
 " move line or visually selected block - alt+j/k
 inoremap <A-j> <Esc>:m .+1<CR>==gi
