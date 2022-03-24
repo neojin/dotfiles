@@ -21,6 +21,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'tomtom/tcomment_vim'
   Plug 'mileszs/ack.vim'
   Plug 'easymotion/vim-easymotion'
+  Plug 'github/copilot.vim'
 call plug#end()
 
 
